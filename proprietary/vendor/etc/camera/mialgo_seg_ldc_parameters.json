@@ -1,0 +1,60 @@
+{
+    "Loader_param": {
+        "type": "segmentation",
+        "mode": "normal",
+        "name": "mialgo_seg_ldc"
+    },
+    "PreProcess": {
+        "inputs": [
+            {
+                "name": "input",
+                "shape": [1, 768, 768, 3]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "output",
+                "shape": [1, 768, 768, 2]
+            }
+        ],
+        "resize_keep_ratio": true,
+        "image_mean": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "image_std": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "inputimage_format": "bgr",
+        "size_divisor": 32,
+        "do_pixel_norm": false
+    },
+    "Executor": {
+        "model_folder": "proposal_final",
+        "adsp_path": "/vendor/lib/rfsa/adsp;/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp",
+        "asset_path": "/vendor/etc/camera",
+        "log_keyword":"algo_seg",
+        "verify":"mialgo-multicam",
+        "reserved_string":"",
+        "reserved_int":0
+    },
+    "PostProcessList": [
+        {
+            "head_type": "Segmentation",
+            "head_id": "seg_head",
+            "head_dep": [
+                "Executor",
+                "PreProcess"
+            ],
+            "param": {
+                "logit_map": false,
+                "output_channel": 1,
+                "scaler": 255
+
+            }
+        }
+    ]
+}

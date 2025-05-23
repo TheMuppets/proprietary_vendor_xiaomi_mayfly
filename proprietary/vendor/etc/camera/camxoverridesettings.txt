@@ -1,0 +1,303 @@
+multiCameraLogicalXMLFile=mayfly.xml
+
+# Camera Log
+logInfoMask=0x10098
+logConfigMask=0x80
+overrideLogLevels=0x1F
+enableTxtLogging=1
+offlineLogNumber=14
+raiserecoverysigabrt=TRUE
+offlineLoggerEnableBackupLog=FALSE
+
+#Enable GPU rotate
+enableGPURotation=1
+
+pdafHWEnable=TRUE
+enableNCSService=TRUE
+# PDAF does not show the focus area frame, CAF show the focus area frame
+disableFocusIndication=1
+
+soundTimeWhenAnchor =1
+
+# Bokeh
+isPhyicalMultiCameraSupported=TRUE
+bokehVendorID=1
+bokehRelightVerion=2
+multiCameraFrameSyncMask=0
+supportedBokehRoleMask=0x1
+ismfnrbokehsupported=TRUE
+BokehSlaveMfnrEnable=FALSE
+
+# SAT
+enablePostZoomFOV=1
+enableMFLOEMCustomization=TRUE
+maxDigitalZoom=10.0
+videoSATSupportedRange=0x0F
+enablePerRequestSync=FALSE
+
+# SAT zoom animation params
+isSwitchAnimationSupported=TRUE
+satZoomButton=0.6:1:2:5:10|0.6:1:2:5:6
+satZoomTime=800|700
+
+#Disable SAT in third-party app
+is3rdLightWeightSupported=TRUE
+
+# ISZ
+enableInSensorZoom=FALSE
+enableDynamicModeSwitchVCUpdate=FALSE
+ISZEnableCameraRole=0x2
+ISZGainThSwitchIn=30.0
+ISZGainThSwitchOff=34.0
+
+# For FD
+#enableSMDetection=TRUE
+#enableGBDetection=TRUE
+#enablePTDetection=TRUE
+#enableCTDetection=TRUE
+FDAlgorithmShiftThreshold=0x5
+
+#Video skinbeautifie/Filter/Bokeh
+isVideoBeautifierSupported=TRUE
+isVideoFilterSupported=TRUE
+isVideoBokehSupported=TRUE
+isFrontVideoBokehSupported=TRUE
+AIEnhancementVersion=2
+
+# TS skinbeautifier
+isBeautyVersion=104
+enableEGLCache=TRUE
+isBeautyMakeupSupported=TRUE
+isTrueSightBeautyEnabled=TRUE
+
+#Chi recovery
+enablechirecovery=FALSE
+
+#enable earlyPCR
+numPCRsBeforeStreamOn=1
+
+#enable camera pre init
+isEarlysettingsEnable=0x1
+
+#enablemimovie
+isVideoMimovieSupported=TRUE
+# MFHDR enable Snapshot Mode
+SupportedAlgoEngineHdr=1
+
+#SHDR seamless
+setAutoHDRMode=1
+enableDynamicModeSwitchVCUpdate=TRUE
+perFrameSensorMode=TRUE
+enable3expSHDRSnapshot=TRUE
+
+#SHDR liveshot use preview frame
+#001000 : front videohdr liveshot
+LiveshotUsePreview=8
+
+#enablelogformat
+isVideoLogformatSupported=TRUE
+
+#OIS enable Optimization
+enableOISOptimization=TRUE
+
+#supernight
+MIVISuperNightSupportMask=0x070707
+
+disablePDAF=FALSE
+
+# Video EIS
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K,3001--8K
+vsquality=5@30|6@30|6@60|8@30|8@60|3001@24
+iseispreviewSupported=TRUE
+isFrontVHdrSupported=TRUE
+
+# For CTS Reprocess Size
+minReprocessInputWidth=0x1FFF
+minReprocessInputHeight=0x1FFF
+
+# MISDK
+algoCameraXEnabled=TRUE
+algoSDKEnabled=TRUE
+
+# Video skinbeautifier/AI/Filter
+isVideoBeautyEISSupported=TRUE
+isVideoBeautyScreenshotSupported=TRUE
+isColorRetentionSupported=TRUE
+isVideoColorRetentionBackSupported=TRUE
+superVideoFilterVersion=1
+is30fpsDynamicSupported=TRUE
+is60fpsDynamicSupported=TRUE
+dynamicFpsSupported=0@30|1@30|2@30|3@30|4@30|4@60|0@60
+#Dynamic FPS For VideoHDR
+isVideoHDRSupportSetFreq=0x3
+
+# Quickview
+enableCHIPartialData=1
+quickviewsupport=TRUE
+quickviewmask=0x42F07
+addScanIn3ALockStatus=1
+
+#hdr10plus
+VideoHdrAvailableConfigurations=hdr10plus:1080P@30|hdr10plus:1080P@60|hdr10plus:4k@30|hdr10plus:4k@60|hdr10:8k@24|hdr10:8k@30
+VideoHdrAvailableConfigurationsForFontCamera=hdr10plus:1080P@30|hdr10plus:1080P@60
+
+#Input Info Check of HDR
+InputInfoChecker=0
+
+# override Flash Current
+overrideFlashTorchCurrent=150
+overrideFlashVideoLightCurrent=150
+overrideFlashSnapshotLightCurrent=500
+overrideFlashPreviewLightCurrent=150
+
+#Enable motion capture
+#   bit[0]: 1 means it supports motion capture in capture mode.
+#           0 means not.
+#   bit[1]: 1 means it supports dedicated denoise algo under
+#             motion capture & capture mode.
+#           0 means not.
+#   bit[2]: 1 means it supports HDR under
+#             motion capture & capture mode.
+#           0 means not.
+#   bit[3]: 1 means replace SR with MFNR
+#           0 means not.
+#   bit[8]: 1 means it supports motion capture in portrait mode.
+#           0 means not.
+#   bit[9]: 1 means it supports dedicated denoise algo under
+#             motion capture & portrait mode.
+#           0 means not.
+#   bit[10]: 1 means it supports HDR under
+#             motion capture & portrait mode.
+#           0 means not.
+#   bit[11:12]: default on behavior bits
+#           b'00 means off by default.
+#           b'01 means it's enabled by default in non-banding env.
+#                User enables it manually in banding env via UI.
+#           b'10 means it's enabled by default in all env.
+#                User disables it manually in banding env via UI.
+#           b'11 reserve
+#   bit[13:31]: reserve
+enableMotionCapture=0x0D0D
+
+# Bit Mask for HighQualityQuickShot configure
+# Bit[0]       - Support MFSR/LLS in SAT mode
+# Bit[1]       - Support HDR in SAT mode
+# Bit[2]       - Support SR in SAT mode
+# Bit[3]       - Support SuperNightSE in SAT mode
+# Bit[4]       - Support HDRSR in SAT mode
+# Bit[5~7]     - reserve
+# Bit[8]       - Support Bokeh MFNR in Back Camera
+# Bit[9]       - Support Bokeh HDR in Back Camera
+# Bit[10]      - Support MFNR in Front Camera
+# Bit[11]      - Support HDR in Front Camera
+# Bit[12]      - Support Bokeh in Front Camera
+# Bit[13]      - Support Macro Mode
+# Bit[14~15]   - reserve
+# Bit[16~19]   - HighQualityQuickShot queue length(max number of HighQualityQuickShot)
+# Bit[20]      - Support reuse RDI buffer or not
+# Bit[21]      - Support Limit MFNR input frames or not
+# Bit[22]      - Support quickshot and HightQualityQuickShot mixed use.
+# Bit[23]      - reserve
+# Bit[24]      - Mixed quick shot support SAT MFNR or not
+# Bit[25]      - Mixed quick shot support front MFNR or not
+# Bit[26]      - Mixed quick shot support Macro mode or not
+# Bit[27~31]   - reserve
+HighQualityQuickShotSupportMask=0x3431F03
+
+# Bit Mask for HighQualityQuickShotDelayTime configure
+# Bit[0 ~ 3]   - DelayTime XX * 100 ms of Bokeh MFNR in Back Camera
+# Bit[4 ~ 7]   - DelayTime XX * 100 ms of Bokeh MFNR in Front Camera
+# Bit[8 ~ 11]  - DelayTime XX * 100 ms of Back Normal Capture
+# Bit[12 ~ 15] - DelayTime XX * 100 ms of HDR in Front Camera
+# Bit[16 ~ 19] - DelayTime XX * 100 ms of HDR in Back Camera
+# Bit[20 ~ 23] - DelayTime XX * 100 ms of SuperNightSe in Back Camera
+# Bit[24 ~ 27] - DelayTime XX * 100 ms of SR in Back Camera
+# Bit[28 ~ 31] - DelayTime XX * 100 ms of Front Normal Capture
+# Bit[32 ~ 35] - DelayTime XX * 100 ms of MacroMode in Back Camera
+# Bit[36 ~ 39] - DelayTime XX * 100 ms of Bokeh HDR in Back Camera
+# Bit[40 ~ 63] - reserv
+QuickShotDelayTimeMask=0x4222222044
+
+#enable VSR
+enableVSR=0x2
+overrideEnableVSR=TRUE
+
+#DME
+enableDMEbasedMCTF=1
+
+# SMMU
+MPMSizeThresToDisableDelayedUnmap=0
+MPMForceDisableDelayedUnmap=TRUE
+
+#PreviewEIS enable
+isPreviewZoomEISSupported=1
+
+#Enable Touch to Track feature
+XiaomiTrackAFSupportedMask=3
+#Res1@FPS1|Res2@FPS2 ...,5--720P,6--1080P,8--4K
+XiaomiVideoTrackAFQuality=5@30|6@30|8@30
+
+pluginBurstReqCnt=0x0
+pluginBurstReqCntForHeif=0x0
+
+## OIS+EIS
+enableOisEis=1
+
+#Flicker
+enableSpectralSensor=1
+
+#SW SYNC
+multiCameraSWFrameSyncInterval=5
+multiCameraHWSyncMask=0
+multiCameraFPSMatchMask=0x1
+multiCameraFrameSyncMask=0x1
+multiCameraExposureTimeMatch=TRUE
+enableExposureTimeMatch=TRUE
+#multiCameraDetectFrameSync=TRUE
+
+#saliency enable
+enableSALINet=1
+
+numConsecutiveRecovery=5
+
+#flush time
+nodeResponseTime=200
+sessionResponseTimePadding=250
+sessionMaxFlushWaitTime=1000
+
+#fix GetImageBuffer timeout
+imageBufferWaitTime=1200
+
+#enable low battery reduces frame rate
+#only Video 60-->30
+enableBatteryStrategy=TRUE
+
+#enable high thermal strategy
+enableBLMClient=1
+
+#enable ois early init thread
+#isOISEarlyThreadEnable=1
+#isActuatorEarlyInitEnable=1
+
+OISMaxWaitingTime=70
+
+#wechat beauty
+isWechattsBeautyEnabled=TRUE
+
+#Async parklens
+#xiaomiParklensAsync=1
+
+#enable Optimize EV Adjustment
+enableOptimizeEVAdjustment=TRUE
+
+#wide Sharpness x 0.5 | ultra Sharpness x 0.5
+SharpnessCompensateRatio=0@0.5|2@0.5
+
+#enable actuator powersaving thread
+ActuatorPowersavingThreadTime=2000
+
+# enableVideoChatPowerSave
+enableVideoChatPowerSave=TRUE
+
+#AE Sync Ratio
+AESyncRatiosVersion1=2800@5.068728,1|4200@2.4,1|6500@1.71796,1
