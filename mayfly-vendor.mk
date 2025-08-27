@@ -14,32 +14,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/acdbdata/waipio_mtp/Forte_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/Forte_acdb_cal.acdb \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/acdbdata/waipio_mtp/Forte_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/waipio_mtp/Forte_workspaceFileXml.qwsp \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/105_WindSing.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/105_WindSing.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/106_Lost.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/106_Lost.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/107_Central.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/107_Central.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/109_Rome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/109_Rome.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/110_BlackGold.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/111_GreenOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/111_GreenOrange.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/112_CyberPunk.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/112_CyberPunk.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/113_BlackIce.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/113_BlackIce.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/121_Bleach.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/121_Bleach.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/122_Thriller.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/122_Thriller.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/123_TealOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/123_TealOrange.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/124_JapaneseStyle.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/124_JapaneseStyle.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/125_Latin.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/125_Latin.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/126_Fantasy2.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/126_Fantasy2.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/127_Creamy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/127_Creamy.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/128_Sepia.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/128_Sepia.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/129_Vivid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/129_Vivid.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/130_Natural.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/130_Natural.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/131_Monochrome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/131_Monochrome.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/132_MonochromeHighContrast.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/132_MonochromeHighContrast.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/133_MonochromeBrown.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/133_MonochromeBrown.png \
-    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/134_MonochromeBlue.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/134_MonochromeBlue.png \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/CFR_para_UW_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01.bin \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/CFR_para_UW_V01_HD.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01_HD.bin \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/CFR_para_UW_V01_SN.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01_SN.bin \
@@ -395,6 +369,34 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/snsc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/snsc.bin \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/snsc_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/snsc_params.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/superiq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/110_BlackGold.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/129_LeicaVivid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/129_LeicaVivid.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/130_LeicaNatural.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/130_LeicaNatural.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/131_MonochromeTrue.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/131_MonochromeTrue.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/132_MonochromeHighContrast.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/132_MonochromeHighContrast.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/133_MonochromeBrown.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/133_MonochromeBrown.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/134_MonochromeBlue.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/134_MonochromeBlue.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/144_RedHero.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/144_RedHero.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/146_TactileGreen.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/146_TactileGreen.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/148_Mild.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/148_Mild.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/149_LilyWhite.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/149_LilyWhite.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/150_Bright.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/150_Bright.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/151_Fresh.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/151_Fresh.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/152_Limpid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/152_Limpid.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/153_KC64.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/153_KC64.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/154_V250.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/154_V250.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/155_H400.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/155_H400.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/156_ColdWhite.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/156_ColdWhite.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/157_Native.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/157_Native.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/158_BWClassical.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/158_BWClassical.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/159_Flowers.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/159_Flowers.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/160_Vivid.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/160_Vivid.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/161_KP160.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/161_KP160.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/162_Natural.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/162_Natural.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/163_KG200.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/163_KG200.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/164_FC400.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/164_FC400.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/165_C50D.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/165_C50D.png \
+    vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/videofilter/166_F50.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/videofilter/166_F50.png \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/xiaomi/dualbokehjpegsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehjpegsnapshot.json \
     vendor/xiaomi/mayfly/proprietary/vendor/etc/camera/xiaomi/dualbokehsnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/dualbokehsnapshot.json \
@@ -851,6 +853,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
     libAF \
     libMiMotion \
+    libMiVideoFilter \
     libQnnHtpAltPrepV69Stub \
     libSNPE \
     libSnpeHtpV69Stub \
@@ -978,7 +981,6 @@ PRODUCT_PACKAGES += \
     libtriplecam_video_optical_zoom \
     libubifocus \
     libvideoBokeh \
-    libvideofilter_only \
     libvidhance \
     libvidhance_active_ois \
     libvidhance_face_stabilizer \

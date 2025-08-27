@@ -3938,7 +3938,7 @@ cc_prebuilt_library_shared {
                 "libcom.qti.chinodeutils",
                 "libutils",
                 "libcutils",
-                "libvideofilter_only",
+                "libMiVideoFilter",
                 "libcamxcommonutils",
                 "libcamximageformatutils",
                 "libz",
@@ -8200,6 +8200,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMiVideoFilter",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMiVideoFilter.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libnativewindow",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libQnnHtpAltPrepV69Stub",
     owner: "xiaomi",
     strip: {
@@ -11772,6 +11800,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@2.0-ScopedWakelock",
                 "android.frameworks.sensorservice@1.0",
                 "libjsoncpp",
+                "libmisight",
                 "libc++",
                 "libc",
                 "libm",
@@ -12049,33 +12078,6 @@ cc_prebuilt_library_shared {
                 "libc++_shared",
                 "libm",
                 "liblog",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvideofilter_only",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvideofilter_only.so",
-            ],
-            shared_libs: [
-                "libGLESv3",
-                "libEGL",
-                "liblog",
-                "libc++_shared",
-                "libm",
                 "libdl",
                 "libc",
             ],
