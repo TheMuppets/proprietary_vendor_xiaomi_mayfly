@@ -6,7 +6,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),mayfly)
 
-$(call add-radio-file-sha1-checked,radio/abl.img,9d694f51cea6cdbe604424e2a1c059de27c9eff0)
+$(call add-radio-file-sha1-checked,radio/abl.img,70722fd680210da5af46df397a85d2fed9167c16)
 $(call add-radio-file-sha1-checked,radio/aop.img,a3fcdc95cfb7226f8b41d0a5d6adb793a4391dfe)
 $(call add-radio-file-sha1-checked,radio/aop_config.img,c20f3e738b6a9a639b22b15ba9af99ba2a82f739)
 $(call add-radio-file-sha1-checked,radio/bluetooth.img,9e598c86e01179b0dd7b98c63a5170f7335678a4)
